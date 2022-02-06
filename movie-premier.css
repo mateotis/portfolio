@@ -1,0 +1,62 @@
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+	bottom: 0;
+}
+
+li {
+  float: right;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navbar li a:hover {
+  background-color: #111;
+}
+
+.navbar .active {
+  background-color: #04AA6D;
+}
+
+.footer p {
+  color: white;
+  text-align: right;
+  display: block;
+  padding-right: 10px;
+}
+
+.vid-title {
+  text-align: center;
+}
+
+.vid-summary {
+  text-align: center;
+  font-style: italic;
+}
+
+.vid-details {
+  text-align: center;
+}
+
+video {
+  display: block;
+  margin: 0 auto;
+}

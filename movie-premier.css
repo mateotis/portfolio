@@ -1,11 +1,39 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* SITE-WIDE STYLES */
+
+/* Navbar/header */
 .navbar ul {
-  list-style-type: none;
+  list-style-type: none; /* Remove list marker */
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
 }
 
+li {
+  float: right;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; /* Removes the underlining usually present at links */
+}
+
+.navbar li a:hover {
+  background-color: #0395DE;
+}
+
+.navbar .active {
+  background-color: #0395DE;
+}
+
+/* Footer */
 .footer ul {
   list-style-type: none;
   margin: 0;
@@ -15,49 +43,68 @@
 	bottom: 0;
 }
 
-p {
-  font-size: 18px;
+.footer p {
+  color: white;
+  text-align: right;
+  display: block;
+  padding-right: 10px;
+}
+
+/* PAGE SPECIFIC STYLES */
+
+.content {
+  visibility: hidden; /* Start with the main content hidden */
+  text-align: center; /* Easier to just put it here, since (almost) everything is centered here */
 }
 
 .button {
+  font-family: 'Lato', sans-serif; /* For some reason, the button text didn't change fonts when I added it to the body tag */
   border: none;
   color: white;
   padding: 1em;
   text-align: center;
   display: inline-block;
   margin: 4px 2px;
-  cursor: pointer;
+  cursor: pointer; /* Specifies that the cursor changes when hovering over the button, to sign that it's clickable */
   background-color: #2d8cff;
-  border-radius: 30%;
+  border-radius: 30%; /* Rounding the corners! */
 }
 
-.content {
-  visibility: hidden;
-  text-align: center; /* Easier to just put it here, since everything is centered */
+.promo {
+  font-size: 18px;
 }
 
 .promo1 {
   visibility: visible;
 }
 
+.title {
+  font-size: 1.2em;
+  padding-top: 2em;
+}
+
+.tagline {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
 .features {
   height: 100%;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: row;     /* make main axis horizontal (default setting) */
-  justify-content: center; /* center items horizontally, in this case */
-  align-items: center;     /* center items vertically, in this case */
+  display: flex; /* Dabbling with CSS flexbox a little here to display my three feature boxes evenly side-by-side */
+  flex-direction: row;
+  justify-content: center; /* Horizontal centering */
+  align-items: center;     /* Vertical centering */
 }
 
-.feature {
+.feature { /* Each feature box has a fixed size for a uniform look; the words wrap around automatically */
   width: 250px;
   height: 3em;
   margin: 1em 4em;
-  background-color: #2d8cff;
+  background-color: #2d8cff; /* This is the exact Zoom blue - don't tell them ;) */
   color: white;
   padding: 0.5em;
-  /*border-radius: 15%; */
   text-align: center;
 }
 
@@ -71,6 +118,7 @@ p {
   display: none;
 }
 
+/* The below two hovers are a simple way to achieve changing text: the "promise", which appears first, is hidden on hover, while the "reality" is un-hidden */
 .feature:hover .promise {
   display: none;
 }
@@ -79,47 +127,40 @@ p {
   display: inline;
 }
 
-li {
-  float: right;
+.video {
+  font-size: 1.2em;
 }
 
-.navbar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-.navbar li a:hover {
-  background-color: #111;
-}
-
-.navbar .active {
-  background-color: #04AA6D;
-}
-
-.footer p {
-  color: white;
-  text-align: right;
-  display: block;
-  padding-right: 10px;
-}
-
-.vid-title {
-  padding-top: 2em;
-}
-
-.vid-summary {
-  font-style: italic;
-}
-
-.vid-details {
-  text-align: center;
-}
-
-video {
+video { /* Center the video */
   display: block;
   margin: 0 auto;
+}
+
+.download { /* I wanted to make the font here especially big for that good old bash-your-head-in advertisement feel */
+  font-size: 30px;
+}
+
+.download p {
+  margin: 0.5em;
+  padding: 0;
+}
+
+.download a {
+  color: #2d8cff;
+}
+
+.disclaimer { /* In stark contrast with the download prompt, the disclaimer is small and tucked away */
+  display: block;
+  margin: auto;
+  padding-top: 3em;
+  width: 854px; /* Same width as the video, for aesthetics */
+  text-align: center;
+  font-size: 0.8em;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+.disclaimer p { /* This block, together with the one above, centers the div but keeps the text within left-aligned */
+  display: inline-block;
+  text-align: left;
 }

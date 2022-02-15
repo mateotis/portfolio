@@ -3,25 +3,26 @@
 	<head>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width">
-		<title>Portfolio - Máté Hekfusz</title>
+		<title>Introducing Zoom - Máté Hekfusz</title>
+		<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="movie-premier.css" />
 		<script src = "movie-premier.js" defer></script>
 	</head>
 	<body>
 
-    <div class="navbar">
-      <ul>
-        <li style="float: left"><a href="index.html">Máté Hekfusz</a></li>
-        <li><a class = "active" href="30mff.html">30MFF Premiere</a></li>
-        <li><a href="p2.html">Project 2</a></li>
-        <li><a href="p3.html">Project 3</a></li>
-        <li><a href="p4.html">Project 4</a></li>
+    <div class="navbar"> <!--I plan to keep the navbar and footer consistent throughout all my assignments, hence the placeholder Project links-->
+      <ul> <!-- The navbar itself is a heavily-modified list (as evidenced by the <ul> and <li> tags), with horizontal instead of vertical "listing" -->
+        <li style="float: left"><a href="">Máté Hekfusz</a></li>
+        <li><a href="" title = "Coming soon!">Project 4</a></li>
+        <li><a href="" title = "Coming soon!">Project 3</a></li>
+        <li><a href="" title = "Coming soon!">Project 2</a></li>
+				<li><a class = "active" href="movie-premier.html">30MFF Premiere</a></li>
       </ul>
   </div>
 
 	<div class = "content">
 
-		<div class = "promo promo1">
+		<div class = "promo promo1"> <!-- As I see it, giving a div two classes is an alternative of wrapping it in a parent div: in this case, the promo class is shared by all lines, while each also have unique classes -->
 			<p id = "promo-line1">Are you in lockdown, forced to stay at home in the middle of your college education?</p>
 			<button class = "button" id = "button1">Yes!</button>
 		</div>
@@ -34,15 +35,15 @@
 			<button class = "button" id = "button3">Of course!</button>
 		</div>
 
-	  <div class = "vid-title">
-	    <h1>INTRODUCING ZOOM</h1>
+	  <div class = "title">
+	    <h1>INTRODUCING <span style="color: #2d8cff">ZOOM</span></h1>
 	  </div>
 
-	  <div class = "vid-summary">
+	  <div class = "tagline">
 	    <p>The best remote meeting platform, as chosen by universities worldwide!</p>
 	  </div>
 
-		<div class="features">
+		<div class="features"> <!--Here I use <span> instead of <p> tags to allow for the hover-switch formatting -->
 		  <div class = "feature">
 				<span class = "promise"><b>Millions of users</b></span>
 				<span class = "reality">Some of them aren't even mandated to use it!</span>
@@ -64,15 +65,23 @@
 	    </video>
 	  </div>
 
-	  <div class = "vid-details">
-	    <p>Made in 30 minutes (and change) during Professor Michael Ang's <a href = "https://www.commlab.nyuadim.com/">Communications Lab</a> class on 26 January, 2022.</p>
-	  </div>
+	  <div class = "download">
+			<p>Amazed? We thought you would be.</p>
+			<a href = "" title = "Don't worry, I won't actually make you download Zoom. :)">Download Zoom today!</a>
+		</div>
+
+		<div class = "disclaimer">
+			<p>DISCLAIMER:
+			This is a parody and is in no way affiliated with Zoom (nor does it wish to be).
+			The movie was made in 30 minutes (and change) during Professor Michael Ang's <a href = "https://www.commlab.nyuadim.com/">Communications Lab</a> class on 26 January, 2022.
+			The page was made in many hours of blood, sweat, and tiny CSS adjustments.</p>
+		</div>
 
 	</div>
 
   <div class="footer">
      <ul>
-    <p>Copyright © 2022 - Máté Hekfusz</p>
+    <p>Copyright © 2022 - Máté Hekfusz</p> <!--Frankly, I have no idea what it takes to properly copyright something...-->
   </ul>
   </div>
 

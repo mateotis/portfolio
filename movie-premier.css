@@ -71,7 +71,7 @@ li {
 }
 
 .promo {
-  font-size: 18px;
+  font-size: 1.2em; /* I tried to use flexible sizes wherever possible */
 }
 
 .promo1 {
@@ -110,11 +110,12 @@ li {
 
 .promise {
   line-height: 3em;
-  font-size: 18px;
+  font-size: 1em;
 }
 
 .reality {
   line-height: 1.5em;
+  font-size: 1em;
   display: none;
 }
 
@@ -137,7 +138,7 @@ video { /* Center the video */
 }
 
 .download { /* I wanted to make the font here especially big for that good old bash-your-head-in advertisement feel */
-  font-size: 30px;
+  font-size: 2em;
 }
 
 .download p {

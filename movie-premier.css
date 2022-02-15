@@ -15,6 +15,70 @@
 	bottom: 0;
 }
 
+p {
+  font-size: 18px;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #2d8cff;
+  border-radius: 30%;
+}
+
+.content {
+  visibility: hidden;
+  text-align: center; /* Easier to just put it here, since everything is centered */
+}
+
+.promo1 {
+  visibility: visible;
+}
+
+.features {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;     /* make main axis horizontal (default setting) */
+  justify-content: center; /* center items horizontally, in this case */
+  align-items: center;     /* center items vertically, in this case */
+}
+
+.feature {
+  width: 250px;
+  height: 3em;
+  margin: 1em 4em;
+  background-color: #2d8cff;
+  color: white;
+  padding: 0.5em;
+  /*border-radius: 15%; */
+  text-align: center;
+}
+
+.promise {
+  line-height: 3em;
+  font-size: 18px;
+}
+
+.reality {
+  line-height: 1.5em;
+  display: none;
+}
+
+.feature:hover .promise {
+  display: none;
+}
+
+.feature:hover .reality {
+  display: inline;
+}
+
 li {
   float: right;
 }
@@ -44,11 +108,10 @@ li {
 }
 
 .vid-title {
-  text-align: center;
+  padding-top: 2em;
 }
 
 .vid-summary {
-  text-align: center;
   font-style: italic;
 }
 

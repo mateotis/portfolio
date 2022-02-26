@@ -1,0 +1,65 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* SITE-WIDE STYLES */
+
+/* Navbar/header */
+.navbar ul {
+  list-style-type: none; /* Remove list marker */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; /* Removes the underlining usually present at links */
+}
+
+.navbar li a:hover {
+  background-color: #0395DE;
+}
+
+.navbar .active {
+  background-color: #0395DE;
+}
+
+/* Footer */
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+	bottom: 0;
+}
+
+.footer p {
+  color: white;
+  text-align: right;
+  display: block;
+  padding-right: 10px;
+}
+
+/* PAGE SPECIFIC STYLES */
+
+.img-overlay {
+  position: relative;
+  display: inline-block;
+}
+
+.img-overlay svg {
+  position: absolute;
+  top: 160px; /* Manual adjustment to line SVG up with image */
+  left: 0;
+  opacity: 0;
+}

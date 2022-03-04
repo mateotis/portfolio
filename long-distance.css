@@ -1,6 +1,6 @@
 .title {
 	text-align: center;
-	padding-top: 25vw;
+	padding-top: 25vw; /* Practically all measurements here are done with relative units, for maximum responsiveness*/
 	padding-bottom: 25vw;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .user-name {
-	color: blue;
+	color: blue; /* Simple, clear colours */
 	margin: 0;
 	font-size: 1.4em;
 }
@@ -32,8 +32,8 @@
 	font-size: 1.3em;
 }
 
-.chat {
-	width: max-content;
+.chat { /* Since the two people's chat boxes have only a few style differences, I made a common class to contain everything that's the same */
+	width: max-content; /* Make chat box size scale with the text within, up to a certain point */
 	max-width: 25%;
 	background-color: darkblue;
 	padding: 1em;
@@ -41,7 +41,7 @@
 	border-radius: 25px;
 }
 
-.user-chat {
+.user-chat { /* And then applied the individual classes which determine which side the messages are on */
 	margin-right: auto;
 	margin-left: 25%;
 }

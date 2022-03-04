@@ -2,6 +2,7 @@ AOS.init();
 
 messenger = document.getElementsByClassName("messenger")[0];
 
+// Courtesy of AOS, we can tie events to when specific divs animate in or out - I use it here to change the colour of the background 
 document.addEventListener("aos:in:color-change-setup", ({detail}) => {
 	messenger.style.backgroundColor = "lightgrey";
 });

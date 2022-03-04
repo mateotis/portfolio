@@ -1,0 +1,147 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* SITE-WIDE STYLES */
+
+/* Navbar/header */
+.navbar ul {
+  list-style-type: none; /* Remove list marker */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; /* Removes the underlining usually present at links */
+}
+
+.navbar li a:hover {
+  background-color: #0395DE;
+}
+
+.navbar .active {
+  background-color: #0395DE;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #0395DE;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Footer */
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+	bottom: 0;
+}
+
+.footer p {
+  color: white;
+  text-align: right;
+  display: block;
+  padding-right: 10px;
+}
+
+/* PAGE SPECIFIC STYLES */
+
+.title {
+	text-align: center;
+	padding-top: 25vw;
+	padding-bottom: 25vw;
+}
+
+.title p {
+	font-size: 1.3em;
+	font-style: italic;
+	padding-top: 1em;
+}
+
+.messenger {
+	background-color: lightgrey;
+}
+
+.user-name {
+	color: blue;
+	margin: 0;
+	font-size: 1.4em;
+}
+
+.other-name {
+	color: red;
+	margin: 0;
+	font-size: 1.4em;
+}
+
+.message {
+	color: white;
+	margin: 0.5em;
+	font-size: 1.3em;
+}
+
+.chat {
+	width: max-content;
+	max-width: 25%;
+	background-color: darkblue;
+	padding: 1em;
+	margin-bottom: 2%;
+	border-radius: 25px;
+}
+
+.user-chat {
+	margin-right: auto;
+	margin-left: 25%;
+}
+
+.other-chat {
+	background-color: darkred;
+	margin-left: auto;
+	margin-right: 25%;
+}

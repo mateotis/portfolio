@@ -17,7 +17,3 @@ document.addEventListener("aos:in:color-change-box2", ({detail}) => {
 document.addEventListener("aos:in:color-change-box3", ({detail}) => {
 	messenger.style.backgroundColor = "white";
 });
-
-//for(let i = 0; i < 10; i++) {
-//	document.getElementById("title-dashes").innerHTML += "-";
-//}

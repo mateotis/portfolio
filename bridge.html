@@ -4,20 +4,28 @@
 		<meta charset="utf-8">
 		<title>Bridge - Máté Hekfusz</title>
 		<link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="common.css" />
 		<link rel="stylesheet" type="text/css" href="bridge.css" />
 		<script src = "bridge.js" defer></script>
 	</head>
 	<body>
 		<div class="navbar"> <!--I plan to keep the navbar and footer consistent throughout all my assignments, hence the placeholder Project links-->
 		  <ul> <!-- The navbar itself is a heavily-modified list (as evidenced by the <ul> and <li> tags), with horizontal instead of vertical "listing" -->
-			<li style="float: left"><a href="">Máté Hekfusz</a></li>
-			<li><a class = "active" href="bridge.html">Misc</a></li>
-			<li><a href="" title = "Coming soon!">Project 4</a></li>
-			<li><a href="" title = "Coming soon!">Project 3</a></li>
-			<li><a href="" title = "Coming soon!">Project 2</a></li>
-			<li><a href="movie-premier.html">30MFF Premiere</a></li>
-		  </ul>
-	  </div>
+			  <li style="float: left"><a href="">Máté Hekfusz</a></li>
+  			<div class="dropdown active">
+  				<button class="dropbtn">Assignments
+  				</button>
+  				<div class="dropdown-content">
+  					<a href="bridge.html" class = "active">Bridge</a>
+  					<a href="long-distance.html">Long Distance</a>
+  				</div>
+  			</div>
+  			<li><a href="" title = "Coming soon!">Project 4</a></li>
+  			<li><a href="" title = "Coming soon!">Project 3</a></li>
+  			<li><a href="" title = "Coming soon!">Project 2</a></li>
+  			<li><a href="movie-premier.html">30MFF Premiere</a></li>
+  		  </ul>
+  		</div>
 
 		<div class = "prompt"><p>Click the inside of the first bridge gate!</p></div>
 		<div class="img-overlay">
@@ -31,6 +39,6 @@
 	      <p>Copyright © 2022 - Máté Hekfusz</p> <!--Frankly, I have no idea what it takes to properly copyright something...-->
 	    </ul>
 	    </div>
-		
+
 	</body>
 </html>

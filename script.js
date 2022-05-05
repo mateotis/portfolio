@@ -20,7 +20,7 @@ function changeSkill() {
 		skill = thingsLearned[Math.floor(Math.random() * thingsLearned.length)]; // Select a random skill I've learned from the above-defined array
 		return skill;
 	});
-	setTimeout(changeSkill, Math.random() * 3000); // Recursive function: calls itself again after three secondsr
+	setTimeout(changeSkill, 3000); // Recursive function: calls itself again after three secondsr
 }
 
 $(document).ready(function() {

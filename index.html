@@ -12,25 +12,25 @@
 
 	<body>
 		<div class = "intro">
-			<h2 style="font-size:1.8em">Hi! My name is <span style="color:blue">Máté Hekfusz</span>.</h2>
-			<p class = "iam">I am a <span class = "arrows" id = "starting-arrow">>></span> <span class = "iam-part" id = "iam-part-1">Hungarian</span> <span class = "arrows">>></span> <span class = "iam-part" id = "iam-part-2">Computer Science major</span> <span class = "arrows">>></span> <span class = "iam-part" id = "iam-part-3">attending <a id = "nyuad" href = "https://nyuad.nyu.edu/en/" target="_blank">NYU Abu Dhabi</a>.</span></p>
+			<h2 style="font-size:1.8em">Hi! My name is <span style="color:blue">Máté Hekfusz</span>.</h2> <!-- Making use of inline CSS here because it's only a single tiny change -->
+			<p class = "iam">I am a <span class = "arrows" id = "starting-arrow">>></span> <span class = "iam-part" id = "iam-part-1">Hungarian</span> <span class = "arrows">>></span> <span class = "iam-part" id = "iam-part-2">Computer Science major</span> <span class = "arrows">>></span> <span class = "iam-part" id = "iam-part-3">attending <a id = "nyuad" href = "https://nyuad.nyu.edu/en/" target="_blank">NYU Abu Dhabi</a>.</span></p> <!-- This whole line is made up of span tags, so I can individually format and control them in the CSS and JS -->
 			<h2>This is my <span style="color:fuchsia"><a href = "https://www.commlab.nyuadim.com/" target = "_blank">Communications Lab</a></span> portfolio.</h2>
 			<p class = "learned-things">I've learned a lot this semester about <span id = "learned">web development</span> and done several projects.</p>
 			<p>You can find them all below, ordered into four categories.</p>
 			<p>Enjoy!</p>
 		</div>
-		<div class = "columns">
+		<div class = "columns"> <!-- The main feature: my portfolio, divided into four flexbox columns-->
 			<div class="column" id = "column1">
-				<img class = "cover" src = "images/web-icon.png">
+				<img class = "cover" src = "images/web-icon.png"> <!-- The cover is what you see at first -->
 				<h2 class = "cover">WEB</h2>
-				<div class = "column-content" id = "column1-content">
+				<div class = "column-content" id = "column1-content"> <!-- When you hover over a column, all the content appears -->
 					<h2 class = "project-designation">MAIN PROJECT</h2>
 					<h3 class = "project-title">Introducing Zoom</h3>
 					<a href = "movie-premier.html" target = "_blank"><img class = "project-img" src = "images/zoom-intro.jpg"></a>
 					<p class = "project-description">A satirical advertisement for the popular communications software. The ad itself was recorded and edited in 30 minutes.</p>
 					<h2 class = "project-designation">SIDE PROJECT</h2>
 					<h3 class = "project-title">Long Distance</h3>
-					<a href = "long-distance.html" target = "_blank"><img class = "project-img" src = "images/long-distance.png"></a>
+					<a href = "long-distance.html" target = "_blank"><img class = "project-img" src = "images/long-distance.png"></a> <!-- The smaller projects live in this very same repo, so we use local links -->
 				</div>
 			</div>
 			<div class="column" id = "column2">
@@ -39,7 +39,7 @@
 				<div class = "column-content" id = "column2-content">
 					<h2 class = "project-designation">MAIN PROJECT</h2>
 					<h3 class = "project-title">Space Duck</h3>
-					<a href = "https://mateotis.github.io/spaceduck/spaceduck.html" target = "_blank"><img class = "project-img" src = "images/spaceduck.png"></a>
+					<a href = "https://mateotis.github.io/spaceduck/spaceduck.html" target = "_blank"><img class = "project-img" src = "images/spaceduck.png"></a> <!-- Most of the main projects have their own site, so link to them -->
 					<p class = "project-description">An interactive comic about a duck who dared to dream. More literally than you think.</p>
 					<h2 class = "project-designation">SIDE PROJECT</h2>
 					<h3 class = "project-title">Bridge</h3>
@@ -79,12 +79,12 @@
 			<p>Feel free to reach out below.</p>
 		</div>
 		<div class = "socials">
-			<a href = "mailto:mate.hekfusz@nyu.edu" target = "_blank"><img class = "social-img" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/1024px-Gmail_icon_%282020%29.svg.png"></a>
+			<a href = "mailto:mate.hekfusz@nyu.edu" target = "_blank"><img class = "social-img" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/1024px-Gmail_icon_%282020%29.svg.png"></a> <!-- I figured, why download the social icons when I can just link them from trusted websites? -->
 			<a href = "https://github.com/mateotis/" target = "_blank"><img class = "social-img" src = "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"></a>
 			<a href = "https://www.linkedin.com/in/máté-hekfusz/" target = "_blank"><img class = "social-img" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png"></a>
 		</div>
 
-		<div class = "footer">
+		<div class = "footer"> <!-- A footer to provide closure -->
 			<p>Created by Máté Hekfusz, 2022</p>
 		</div>
 	</body>

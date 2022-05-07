@@ -1,9 +1,9 @@
 let column = "";
 let columnContent = "";
-let thingsLearned = ["web development", "video editing", "image manipulation", "sound mixing", "comic principles", "wireframing", "responsive design", "digital storytelling"];
+let thingsLearned = ["web development", "video editing", "image manipulation", "sound mixing", "comic principles", "wireframing", "responsive design", "digital storytelling"]; // There's probably stuff I missed...
 let skill = "";
 
-let iamStatus = 0; // How many parts of the "I am" line are displayed
+let iamCount = 0; // How many parts of the "I am" line are displayed
 
 $(document).ready(function() { // Show column content on hover
 	$(".column").hover ( // Instead of having a separate hover event for each column, I made it so that this one works for all of them
@@ -29,8 +29,8 @@ $(document).ready(function() {
 	changeSkill(); // Start the recursion
 });
 
-$(document).ready(function() { // Show column content on hover
-	$("#iam-part-2").hover ( // Instead of having a separate hover event for each column, I made it so that this one works for all of them
+$(document).ready(function() { // Change from l33t speak to normal and back on hover
+	$("#iam-part-2").hover ( // This is why I gave each content span an ID
 		function() { // Hover on
 			$("#iam-part-2").html("C0mput3r Sc13nc3 major");
 		}, function() { // Hover off
@@ -39,15 +39,12 @@ $(document).ready(function() { // Show column content on hover
 	);
 });
 
-$(document).ready(function() { // Click title screen, transition to panel 2
-	$(".arrows").click(function() {
-		if(iamStatus < 3) {
-			iamStatus += 1;
-			console.log("#iam-part-" + iamStatus);
-			$(".arrows").eq(iamStatus).fadeIn(1000);
-			$(".iam-part").eq(iamStatus - 1).fadeIn(1000);
+$(document).ready(function() {
+	$(".arrows").click(function() { // Fade in the next part of the "I am" line on the click of the arrow
+		if(iamCount < 3) { // There are only three parts, so don't run this any more than that
+			iamCount += 1;
+			$(".arrows").eq(iamCount).fadeIn(1000); // eq() lets us select a specific object from an array made up of objects sharing this class
+			$(".iam-part").eq(iamCount - 1).fadeIn(1000); // iamCount serves as the index for both the arrow and content spans - means that we don't need a bunch of if/elses to cover all three parts
 		}
-
-
 	});
 });

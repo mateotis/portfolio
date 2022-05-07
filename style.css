@@ -3,16 +3,16 @@ body {
 }
 
 a {
-	background-color: transparent;
+	background-color: transparent; /* Links should appear the same as basic text, by default */
 	text-decoration: none;
 }
 
 a:visited {
-	color: inherit;
+	color: inherit; /* Keep the same colour as when it was not visited */
 }
 
 a:hover {
-	text-decoration: underline;
+	text-decoration: underline; /* Only underline links on hover */
 }
 
 .intro {
@@ -28,62 +28,62 @@ a:hover {
 }
 
 #iam-part-1 {
-	background-image: linear-gradient(red 33.3%, white 33.3%, white 66.6%, green 66.6%);
+	background-image: linear-gradient(red 33.3%, white 33.3%, white 66.6%, green 66.6%); /* Setting the linear gradient like this actually makes for three solid lines of colour - the Hungarian flag! */
 }
 
 #nyuad {
-	color: #57068c;
+	color: #57068c; /* The exact NYUAD purple returns */
 	font-weight: bold;
 }
 
 .arrows {
 	color: red;
 	display: none;
-	cursor: pointer;
+	cursor: pointer; /* Change the cursor to the one usually shown on links to encourage clicking */
 }
 
 #starting-arrow {
-	display: inline;
+	display: inline; /* Don't hide the very first arrow */
 }
 
 .learned-things {
 	font-size: 1.2em;
 }
 
-.columns {
+.columns { /* The four columns are set up with Flexbox */
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	flex-wrap: wrap;
+	flex-wrap: wrap; /* Wrap them for responsiveness */
 	align-items: center;
 	margin: auto;
 	width: fit-content;
 }
 
 .column {
-	width: 20vw;
+	width: 20vw; /* The base width is variable, to a minimum */
 	min-width: 300px;
-	height: 650px;
+	height: 650px; /* The height is fixed, however, to avoid overflowing of the content on different screen sizes */
 	float: left;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out; /* Allows for a smooth expansion on hover */
 }
 
 .column:hover {
 	display: table;
 	margin: 0;
-	width: 25vw;
+	width: 25vw; /* On hover, the column expands to make space for the content */
 	min-width: 300px;
 	transition: all 0.5s ease-in-out;
 }
 
 .column:hover .cover {
-	opacity: 0;
+	opacity: 0; /* Hide the cover on hover */
 }
 
 .cover {
 	display: block;
 	margin: auto; /* Center images horizontally */
-	max-width: 25%;
+	max-width: 25%; /* Image/text sizing */
 	max-height: 25%;
 	text-align: center;
 	position: relative;
@@ -97,12 +97,12 @@ a:hover {
 	display: none;
 	width: 80%;
 	margin: auto;
-	margin-top: -25%;
+	margin-top: -25%; /* There are some strange top margins by default, this counterbalances that */
 	text-align: center;
 }
 
 .project-img {
-	max-height: 20%;
+	max-height: 20%; /* Make sure the images don't take up too much space in the column */
 	max-width: 100%;
 	margin: auto;
 	display: block;
@@ -113,8 +113,8 @@ a:hover {
 	margin-bottom: 3em;
 }
 
-.column:nth-of-type(1) {
-	background-color: #D0CD94;
+.column:nth-of-type(1) { /* nth-of-type allows us to refer to divs sharing a class without having to give each an ID - perfect for our four columns */
+	background-color: #D0CD94; /* I'm not good at colour theory, but these fit together, right? */
 }
 .column:nth-of-type(2) {
 	background-color: #758E4F;
@@ -137,7 +137,7 @@ a:hover {
 	font-size: 1.1em;
 }
 
-.socials {
+.socials { /* Also flex the social icons, albeit they're much simpler */
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -147,7 +147,7 @@ a:hover {
 }
 
 .socials a {
-	max-width: 5%;
+	max-width: 5%; /* These icons are huge by default! */
 	max-height: 5%;
 }
 
@@ -157,7 +157,7 @@ a:hover {
 }
 
 .footer {
-	width: 98%;
+	width: 98%; /* As wide as you can go without overflowing */
 	height: 3em;
 	background-color: black;
 	color: white;
@@ -166,8 +166,8 @@ a:hover {
 	padding-right: 2em;
 }
 
-@media (max-width: 1000px) {
-	.column {
+@media (max-width: 1000px) { /* Responsive web design, baby! Kicks in when the screen width is smaller than 1000px */
+	.column { /* We already wrap the columns, but this disables the expansion animation to avoid any and all width issues on small screens */
 		transition: none;
 	}
 	.column:hover {

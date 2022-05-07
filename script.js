@@ -3,6 +3,8 @@ let columnContent = "";
 let thingsLearned = ["web development", "video editing", "image manipulation", "sound mixing", "comic principles", "wireframing", "responsive design", "digital storytelling"];
 let skill = "";
 
+let iamStatus = 0; // How many parts of the "I am" line are displayed
+
 $(document).ready(function() { // Show column content on hover
 	$(".column").hover ( // Instead of having a separate hover event for each column, I made it so that this one works for all of them
 		function() { // Hover on
@@ -25,4 +27,27 @@ function changeSkill() {
 
 $(document).ready(function() {
 	changeSkill(); // Start the recursion
+});
+
+$(document).ready(function() { // Show column content on hover
+	$("#iam-part-2").hover ( // Instead of having a separate hover event for each column, I made it so that this one works for all of them
+		function() { // Hover on
+			$("#iam-part-2").html("C0mput3r Sc13nc3 major");
+		}, function() { // Hover off
+			$("#iam-part-2").html("Computer Science major");
+		}
+	);
+});
+
+$(document).ready(function() { // Click title screen, transition to panel 2
+	$(".arrows").click(function() {
+		if(iamStatus < 3) {
+			iamStatus += 1;
+			console.log("#iam-part-" + iamStatus);
+			$(".arrows").eq(iamStatus).fadeIn(1000);
+			$(".iam-part").eq(iamStatus - 1).fadeIn(1000);
+		}
+
+
+	});
 });

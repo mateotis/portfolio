@@ -2,8 +2,52 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+a {
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:visited {
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 .intro {
 	text-align: center;
+}
+
+.iam {
+	font-size: 1.3em;
+}
+
+.iam-part {
+	display: none;
+}
+
+#iam-part-1 {
+	background-image: linear-gradient(red 33.3%, white 33.3%, white 66.6%, green 66.6%);
+}
+
+#nyuad {
+	color: #57068c;
+	font-weight: bold;
+}
+
+.arrows {
+	color: red;
+	display: none;
+	cursor: pointer;
+}
+
+#starting-arrow {
+	display: inline;
+}
+
+.learned-things {
+	font-size: 1.2em;
 }
 
 .columns {
@@ -90,6 +134,7 @@ body {
 
 .social-setup {
 	text-align: center;
+	font-size: 1.1em;
 }
 
 .socials {
@@ -130,7 +175,3 @@ body {
 		transition: none;
 	}
 }
-
-/*.column:nth-of-type(4):hover {
-	left:65%;
-}*/
